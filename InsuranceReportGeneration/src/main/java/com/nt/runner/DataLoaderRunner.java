@@ -39,8 +39,6 @@ public class DataLoaderRunner implements ApplicationRunner
 		c2.setGender("Male");
 		c2.setPlanName("Cash");
 		c2.setPlanStatus("Denied");
-		c2.setPlanStartDate(LocalDate.now());
-		c2.setPlanEndDate(LocalDate.now().plusMonths(6));
 		c2.setDenialReason("Rental Income");
 		
 		// Cash Plan Data
@@ -71,8 +69,6 @@ public class DataLoaderRunner implements ApplicationRunner
 		c5.setGender("Male");
 		c5.setPlanName("Food");
 		c5.setPlanStatus("Denied");
-		c5.setPlanStartDate(LocalDate.now());
-		c5.setPlanEndDate(LocalDate.now().plusMonths(6));
 		c5.setDenialReason("Property Income");
 				
 		// Food Plan Data
@@ -103,8 +99,6 @@ public class DataLoaderRunner implements ApplicationRunner
 		c8.setGender("Male");
 		c8.setPlanName("Medical");
 		c8.setPlanStatus("Denied");
-		c8.setPlanStartDate(LocalDate.now());
-		c8.setPlanEndDate(LocalDate.now().plusMonths(6));
 		c8.setDenialReason("Property Income");
 				
 		// Medical Plan Data
@@ -135,8 +129,6 @@ public class DataLoaderRunner implements ApplicationRunner
 		c11.setGender("Female");
 		c11.setPlanName("Employment");
 		c11.setPlanStatus("Denied");
-		c11.setPlanStartDate(LocalDate.now());
-		c11.setPlanEndDate(LocalDate.now().plusMonths(6));
 		c11.setDenialReason("Property Income");
 				
 		// Employment Plan Data
