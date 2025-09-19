@@ -45,17 +45,17 @@ public class ReportController
 	}
 	
 	@GetMapping("/excel")
-	public void excelExport(HttpServletResponse response) throws IOException
+	public void excelExport(HttpServletResponse response,Map<String,String> map) throws IOException
 	{
 		response.setContentType("application/octet-stream");
 		//response.addHeader("Content-Disposition", "attachment;filename=plans.xlsx;");
-		response.addHeader("Content-Disposition", "attachment;filename=plans.xls;");
+		response.addHeader("Content-Disposition","attachment;filename=plans.xls;");
 		
 		service.exportExcel(response);
 	}
 	
 	@GetMapping("/pdf")
-	public void pdfExport(HttpServletResponse response) throws Exception
+	public void pdfExport(HttpServletResponse response,Map<String,String> map) throws Exception
 	{
 		response.setContentType("application/pdf");
 		response.addHeader("Content-Disposition", "attachment;filename=plans.pdf;");
